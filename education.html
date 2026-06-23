@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">Education</div>
+      <div class="section-head reveal">
+        <h2>Academic record</h2>
+        <p>Consistent performance across every stage, from secondary school through to my current B.Tech.</p>
+      </div>
+
+      <div class="timeline reveal" style="max-width:680px;">
+        <div class="timeline-item">
+          <span class="timeline-date">Sept 2023 — Present</span>
+          <h3>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</h3>
+          <span class="timeline-org">Vellore Institute of Technology, Andhra Pradesh</span>
+          <p style="font-size:14.5px;">CGPA: <strong style="color:var(--text);">9.03</strong></p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">June 2021 — May 2023</span>
+          <h3>Intermediate (MPC)</h3>
+          <span class="timeline-org">NRI Junior College, Hyderabad</span>
+          <p style="font-size:14.5px;">Percentage: <strong style="color:var(--text);">99%</strong></p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">June 2012 — May 2021</span>
+          <h3>Secondary School Certificate (SSC)</h3>
+          <span class="timeline-org">Krishnaveni High School, Bellampally</span>
+          <p style="font-size:14.5px;">Percentage: <strong style="color:var(--text);">100%</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+</body>
+</html>

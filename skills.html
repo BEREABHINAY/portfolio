@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">Skills</div>
+      <div class="section-head reveal">
+        <h2>The toolkit, grouped the way I think about it</h2>
+        <p>Languages and tools don't sit in isolation &mdash; each cluster below feeds into the next, the same way a graph's nodes are only useful because of their edges.</p>
+      </div>
+
+      <div class="node-line reveal"><div class="node"></div><div class="edge"></div><div class="node"></div></div>
+      <span class="skill-fan-hint reveal">The Technologies Behind My Work</span>
+
+      <div class="skills-fan reveal">
+        <div class="skill-panel" data-default="true">
+          <div class="skill-panel-collapsed"><span class="icon">💻</span><span class="label">Languages</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Languages</div>
+            <h3>Programming</h3>
+            <p>The languages I reach for first, depending on what the problem needs.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C</span><span class="pill">C++</span><span class="pill">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🌐</span><span class="label">Web</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Web</div>
+            <h3>Web Technologies</h3>
+            <p>Front to back &mdash; markup and styling through to the server layer.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">React.js</span><span class="pill">Node.js</span><span class="pill">Express.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🗄️</span><span class="label">Databases</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Data</div>
+            <h3>Databases</h3>
+            <p>Relational and document-based &mdash; whichever the data shape calls for.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">MySQL</span><span class="pill">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🧠</span><span class="label">Core CS</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Fundamentals</div>
+            <h3>Core CS Concepts</h3>
+            <p>The theory that everything else above is actually built on.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">DSA</span><span class="pill">OOP</span><span class="pill">DBMS</span><span class="pill">Operating Systems</span><span class="pill">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🛠️</span><span class="label">Tools</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Workflow</div>
+            <h3>Tools &amp; Platforms</h3>
+            <p>What I actually use, every day, to get from idea to shipped code.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🤝</span><span class="label">Professional</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Beyond code</div>
+            <h3>Professional Skills</h3>
+            <p>The non-technical half of actually shipping something with a team.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">Problem-Solving</span><span class="pill">Time Management</span><span class="pill">Adaptability</span><span class="pill">Critical Thinking</span><span class="pill">Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-panel-collapsed"><span class="icon">🤖</span><span class="label">Data &amp; AI</span></div>
+          <div class="skill-panel-full">
+            <div class="eyebrow">Currently building</div>
+            <h3>Data &amp; AI</h3>
+            <p>The newest part of the toolkit, growing with every certification.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="pill">Pandas</span><span class="pill">Matplotlib</span><span class="pill">Data Analysis</span><span class="pill">Prompt Engineering</span><span class="pill">AI Fundamentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+<script>
+  (function(){
+    var panels = document.querySelectorAll('.skill-panel');
+    var canHover = window.matchMedia('(hover: hover)').matches;
+    function collapseAll(except){
+      panels.forEach(function(p){ if(p !== except) p.classList.remove('expanded'); });
+    }
+    panels.forEach(function(p){
+      p.addEventListener('mouseenter', function(){
+        if(canHover){ collapseAll(p); p.classList.add('expanded'); }
+      });
+      p.addEventListener('click', function(){
+        if(!canHover){
+          var wasOpen = p.classList.contains('expanded');
+          collapseAll(p);
+          p.classList.toggle('expanded', !wasOpen);
+        }
+      });
+    });
+    var fan = document.querySelector('.skills-fan');
+    if(fan && canHover){
+      fan.addEventListener('mouseleave', function(){ collapseAll(null); });
+    }
+  })();
+</script>
+</body>
+</html>

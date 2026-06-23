@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">Experience</div>
+      <div class="section-head reveal">
+        <h2>Hands-on, outside the classroom</h2>
+        <p>Leadership and execution experience from the Hult Prize Club, where responsibility has grown alongside the work.</p>
+      </div>
+
+      <div class="timeline reveal" style="max-width:680px;">
+        <div class="timeline-item">
+          <span class="timeline-date">Aug 2025 — Present</span>
+          <h3>Co-Lead, Documentation Team</h3>
+          <span class="timeline-org">Hult Prize Club</span>
+          <p style="font-size:14.5px;">Promoted to oversee documentation standards and workflows for the club. Guide and coordinate team members to ensure clarity, accuracy, and consistency across all official documents.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Jul 2024 — Aug 2025</span>
+          <h3>Member, Technical Team</h3>
+          <span class="timeline-org">Hult Prize Club</span>
+          <p style="font-size:14.5px;">Contributed to technical planning and execution of club activities, supporting the team's operational and digital needs.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="max-width:680px; margin-top:36px; display:flex; gap:18px; align-items:center; padding:20px;">
+        <img src="assets/certifications/cert-hultprize-recognition.jpg" alt="Hult Prize OnCampus Program recognition certificate" class="cert-img" style="width:120px; border-radius:8px; border:1px solid var(--border); flex-shrink:0;">
+        <div>
+          <h3 style="font-size:15px; margin-bottom:4px;">Verified by certificate</h3>
+          <p style="font-size:13.5px; margin-bottom:8px;">Recognized as Organizing Committee Member, Hult Prize OnCampus Program, VIT-AP &mdash; Feb 2025.</p>
+          <a href="certifications.html" style="color:var(--accent); font-family:var(--font-mono); font-size:12.5px; text-transform:uppercase; letter-spacing:.05em;">View all certifications &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+</body>
+</html>

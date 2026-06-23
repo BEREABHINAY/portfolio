@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <div class="section-head reveal">
+        <h2>Let's talk</h2>
+        <p>Open to internships, full-time SDE roles, and interesting conversations. Reach out directly or use the form.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-item">
+            <div class="ic">@</div>
+            <div><h4>Email</h4><p><a href="mailto:abhinayvarma11.6@mail.com">abhinayvarma11.6@mail.com</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">☎</div>
+            <div><h4>Phone</h4><p><a href="tel:+918309391662">+91 83093 91662</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">in</div>
+            <div><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">linkedin.com/in/bereabhinay</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">{ }</div>
+            <div><h4>GitHub</h4><p><a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">github.com/AbhinayBere</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">◎</div>
+            <div><h4>Instagram</h4><p><a href="https://www.instagram.com/abhii_abhinay_116" target="_blank" rel="noopener">@abhii_abhinay_116</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">📍</div>
+            <div><h4>Location</h4><p>Mancherial 504219, Telangana, India</p></div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="card reveal">
+          <div class="form-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" required placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" required placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" rows="5" required placeholder="What would you like to discuss?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+</body>
+</html>

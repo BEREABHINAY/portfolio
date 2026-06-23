@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">About</div>
+      <div class="grid-2" style="align-items:start;">
+        <div class="reveal">
+          <h2 style="font-size: clamp(28px,4vw,40px); margin-bottom:24px;">A CS undergrad who'd rather build the thing than just read about it.</h2>
+          <p>I'm a B.Tech Computer Science (Specialization in AI &amp; ML) student at Vellore Institute of Technology, Andhra Pradesh, currently holding a 9.03 CGPA. My foundation is in Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems and Computer Networks &mdash; and I'm comfortable working across Java, Python, C++ and SQL.</p>
+          <p>Outside the syllabus, I've used the MERN stack to build a full learning management system from scratch, and worked through a real-world systems-design problem for a plastic-waste-recycling platform. I pick things up quickly, stay disciplined about finishing what I start, and genuinely enjoy the process of turning a messy problem into a clean solution.</p>
+          <p>Right now I'm looking for an internship or entry-level software engineering role where I can keep learning fast while contributing real value to a team.</p>
+          <div class="node-line"><div class="node"></div><div class="edge"></div></div>
+          <div class="btn-row">
+            <a href="assets/resume/Abhinay_Bere_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:28px; padding-top:10px;">
+          <div class="avatar-frame">
+            <div class="initials">AB</div>
+          </div>
+          <div class="card" style="width:100%;">
+            <div class="contact-item" style="margin-bottom:14px;">
+              <div class="ic">📍</div>
+              <div><h4>Based in</h4><p>Mancherial- 504219, Telangana, India</p></div>
+            </div>
+            <div class="contact-item" style="margin-bottom:14px;">
+              <div class="ic">🎓</div>
+              <div><h4>Currently</h4><p>B.Tech CSE (AI &amp; ML), VIT-AP (2023 – Present)</p></div>
+            </div>
+            <div class="contact-item" style="margin-bottom:0; align-items:flex-start;">
+              <div class="ic">💼</div>
+              <div>
+                <h4 style="margin-bottom:8px;">Looking for</h4>
+                <div style="display:flex; flex-wrap:wrap; gap:7px;">
+                  <span class="pill">SDE Internship</span>
+                  <span class="pill">Full-Stack Developer</span>
+                  <span class="pill">Frontend Developer</span>
+                  <span class="pill">Software Engineer (Fresher)</span>
+                  <span class="pill">AI/ML Trainee</span>
+                  <span class="pill">Data Analyst (Entry-Level)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>What I bring to a team</h2>
+        <p>A mix of solid fundamentals, hands-on build experience, and the soft skills that keep a project moving.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="eyebrow">Foundation</div>
+          <h3 style="font-size:18px;">Strong CS fundamentals</h3>
+          <p style="font-size:14.5px;">DSA, OOP, DBMS, OS and Computer Networks form the backbone of how I approach every problem.</p>
+        </div>
+        <div class="card reveal">
+          <div class="eyebrow">Execution</div>
+          <h3 style="font-size:18px;">Full-stack build experience</h3>
+          <p style="font-size:14.5px;">From a MERN-based LMS to workflow design for a recycling platform &mdash; I've shipped beyond coursework.</p>
+        </div>
+        <div class="card reveal">
+          <div class="eyebrow">Collaboration</div>
+          <h3 style="font-size:18px;">Team &amp; documentation lead</h3>
+          <p style="font-size:14.5px;">Co-leading the Documentation Team at Hult Prize Club has sharpened how I communicate and coordinate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+</body>
+</html>

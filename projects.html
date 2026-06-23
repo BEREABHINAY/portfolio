@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abhinay Bere</title>
+<script>if(sessionStorage.getItem('pageTransition')==='1'){document.documentElement.classList.add('incoming');}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="page-fade"></div>
+
+<div id="page-content">
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">AB<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">Projects</div>
+      <div class="section-head reveal">
+        <h2>Things I've actually built</h2>
+        <p>Two projects, two very different problems &mdash; one about modelling a real-world process, the other about shipping a complete full-stack application.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <span class="pill" style="margin-bottom:18px; display:inline-block;">Demo Project</span>
+          <h3 style="font-size:21px; margin-bottom:6px;">Dhriti — Plastic Waste Management Platform</h3>
+          <p style="font-size:14.5px;">A demo platform for plastic waste collection and recycling. I designed the system workflows for waste collection, supplier tracking, and recycler coordination, with structured data handling to represent real-world processes clearly.</p>
+          <ul style="margin: 16px 0 20px; padding-left: 18px; color: var(--text-muted); font-size: 14px;">
+            <li style="margin-bottom:6px;">Conceptualised the platform end-to-end, from problem framing to workflow design.</li>
+            <li style="margin-bottom:6px;">Mapped out three core flows: collection, supplier tracking, recycler coordination.</li>
+            <li>Focused on clear, structured data representation over visual polish.</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span class="pill">Systems Design</span><span class="pill">Workflow Modelling</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener" class="btn btn-ghost">Code · Repo Coming Soon</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <span class="pill" style="margin-bottom:18px; display:inline-block;">Full-Stack · MERN</span>
+          <h3 style="font-size:21px; margin-bottom:6px;">Learning Management System (LMS)</h3>
+          <p style="font-size:14.5px;">A full-stack LMS built on MongoDB, Express.js, React.js and Node.js, with secure authentication, role-based access control, and course management functionality.</p>
+          <ul style="margin: 16px 0 20px; padding-left: 18px; color: var(--text-muted); font-size: 14px;">
+            <li style="margin-bottom:6px;">Built secure auth and role-based access control (student / instructor).</li>
+            <li style="margin-bottom:6px;">Implemented course management features end-to-end.</li>
+            <li>Followed modular coding practices and RESTful API design principles.</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span class="pill">MongoDB</span><span class="pill">Express.js</span><span class="pill">React.js</span><span class="pill">Node.js</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener" class="btn btn-ghost">Code · Repo Coming Soon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:28px; text-align:center; padding:34px;">
+        <p style="margin-bottom:0; font-size:14.5px;">More projects in progress &mdash; this page grows as I ship more. <a href="contact.html" style="color:var(--accent);">Get in touch</a> if you'd like to see code walkthroughs for either project above.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>&copy; <span id="year"></span> Abhinay Bere. Built page by page, node by node.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/bereabhinay" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/abhinaybere" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:abhinayvarma11.6@mail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+<script>
+  initSpaceBackground({ starCount: 600, nodeCount: 26, centerpiece: false, ambientShape: true, parallax: true, startWarped: sessionStorage.getItem('pageTransition') === '1' });
+</script>
+</body>
+</html>
