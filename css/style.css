@@ -380,57 +380,31 @@ html.incoming #page-content{
   align-items:center;
   gap:8px;
   font-family: var(--font-mono);
-  font-size:13px;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  padding:13px 22px;
-  border-radius:8px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  border-radius: 8px;
   cursor:pointer;
-  transition:transform .35s ease, box-shadow .35s ease;
-  border:1px solid transparent;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+  border: 1px solid transparent;
 }
-
-/* View Projects (Keep Existing) */
 .btn-primary{
   background: var(--grad);
-  color:#060810;
-  font-weight:500;
+  color: #060810;
+  font-weight: 500;
 }
+.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 10px 30px -8px rgba(91,140,255,0.55); }
 
-.btn-primary:hover{
-  transform:translateY(-4px) scale(1.03);
-  box-shadow:0 12px 30px rgba(91,140,255,.55);
-}
 
-/* View Resume - Crimson → Red */
-.btn-resume{
-  background: linear-gradient(135deg,#FB7185,#F87171);
-  color:#fff;
-  box-shadow:0 5px 15px rgba(248,113,113,.35);
+//// get in touch
+.btn-ghost{
+  border-color: var(--border-strong);
+  color: var(--text);
+  background: rgba(124,140,255,0.05);
 }
-
-.btn-resume:hover{
-  transform:translateY(-4px) scale(1.03);
-  box-shadow:0 12px 30px rgba(248,113,113,.6);
-}
-
-/* Get In Touch - Gold → Orange */
-.btn-contact{
-  background: linear-gradient(135deg,#6EE7B7,#2DD4BF);
-  color:#fff;
-  box-shadow:0 5px 15px rgba(249,115,22,.35);
-}
-
-.btn-contact:hover{
-  transform:translateY(-4px) scale(1.03);
-  box-shadow:0 12px 30px rgba(249,115,22,.6);
-}
-
-.btn-row{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
+.btn-ghost:hover{ border-color: var(--accent); transform: translateY(-2px); background: rgba(124,140,255,0.1); }
+.btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
 
 /* ---------------- sections ---------------- */
 section{ padding: 120px 0 40px; position: relative; }
