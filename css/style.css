@@ -404,19 +404,19 @@ html.incoming #page-content{
 
 /* View Resume - Crimson → Red */
 .btn-resume{
-  background:linear-gradient(135deg,#E11D48,#DC2626);
+  background: linear-gradient(135deg,#FB7185,#F87171);
   color:#fff;
-  box-shadow:0 5px 15px rgba(220,38,38,.35);
+  box-shadow:0 5px 15px rgba(248,113,113,.35);
 }
 
 .btn-resume:hover{
   transform:translateY(-4px) scale(1.03);
-  box-shadow:0 12px 30px rgba(220,38,38,.6);
+  box-shadow:0 12px 30px rgba(248,113,113,.6);
 }
 
 /* Get In Touch - Gold → Orange */
 .btn-contact{
-  background:linear-gradient(135deg,#F59E0B,#F97316);
+  background: linear-gradient(135deg,#6EE7B7,#2DD4BF);
   color:#fff;
   box-shadow:0 5px 15px rgba(249,115,22,.35);
 }
