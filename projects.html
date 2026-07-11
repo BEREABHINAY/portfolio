@@ -36,10 +36,27 @@
       <div class="eyebrow">Projects</div>
       <div class="section-head reveal">
         <h2>Things I've actually built</h2>
-        <p>Two projects, two very different problems &mdash; one about modelling a real-world process, the other about shipping a complete full-stack application.</p>
+        <p>Three projects, three different problems &mdash; an AI system that answers questions from your own documents, a real-world process modelled as software, and a complete full-stack application shipped end to end.</p>
       </div>
 
       <div class="grid-2">
+        <div class="card reveal">
+          <span class="pill" style="margin-bottom:18px; display:inline-block;">AI / RAG · Python</span>
+          <h3 style="font-size:21px; margin-bottom:6px;">DocuMind — RAG-Based Document Q&amp;A System</h3>
+          <p style="font-size:14.5px;">A Retrieval-Augmented Generation system that lets you upload PDFs or text files and ask questions about them in plain English, answered strictly from the document content &mdash; with the exact source passages shown alongside every answer, and a custom evaluation harness to measure retrieval quality.</p>
+          <ul style="margin: 16px 0 20px; padding-left: 18px; color: var(--text-muted); font-size: 14px;">
+            <li style="margin-bottom:6px;">Built a full RAG pipeline: chunking, local sentence-transformers embeddings, Qdrant vector search, and grounded generation via Llama 3.1 (Groq), with a system prompt engineered to prevent hallucination.</li>
+            <li style="margin-bottom:6px;">Designed and ran a retrieval evaluation harness measuring Source Hit Rate@K and Keyword Coverage@K against a custom question set, achieving 100% on both metrics.</li>
+            <li>Implemented session-scoped multi-tenant document isolation at the vector-database level, verified with dedicated automated tests, so concurrent users can never see each other's uploaded documents.</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span class="pill">FastAPI</span><span class="pill">Qdrant</span><span class="pill">sentence-transformers</span><span class="pill">Groq / Llama 3.1</span><span class="pill">React</span><span class="pill">Docker</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/BEREABHINAY/DocMind" target="_blank" rel="noopener" class="btn btn-ghost">DocMind Repo</a>
+          </div>
+        </div>
+
         <div class="card reveal">
           <span class="pill" style="margin-bottom:18px; display:inline-block;">Demo Project</span>
           <h3 style="font-size:21px; margin-bottom:6px;">Dhriti — Plastic Waste Management Platform</h3>
