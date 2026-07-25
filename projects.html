@@ -36,7 +36,7 @@
       <div class="eyebrow">Projects</div>
       <div class="section-head reveal">
         <h2>Things I've actually built</h2>
-        <p>Three projects, three different problems &mdash; an AI system that answers questions from your own documents, a real-world process modelled as software, and a complete full-stack application shipped end to end.</p>
+        <p>Four projects, four different problems &mdash; an AI system that answers questions from your own documents, a real-world process modelled as software, a complete full-stack application shipped end to end, and an LLM-powered tool that turns plain English into database queries.</p>
       </div>
 
       <div class="grid-2">
@@ -54,6 +54,23 @@
           </div>
           <div class="btn-row">
             <a href="https://github.com/BEREABHINAY/DocMind" target="_blank" rel="noopener" class="btn btn-ghost">DocMind Repo</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <span class="pill" style="margin-bottom:18px; display:inline-block;">LLM / Full-Stack · Python</span>
+          <h3 style="font-size:21px; margin-bottom:6px;">TextQuery — Plain English to SQL / NoSQL</h3>
+          <p style="font-size:14.5px;">A full-stack tool that converts a plain-English request into a runnable SQL or NoSQL query for the database of your choice &mdash; PostgreSQL, MySQL, SQLite, SQL Server, MongoDB, or DynamoDB &mdash; with a short explanation and any assumptions flagged, so the generated query is never a black box.</p>
+          <ul style="margin: 16px 0 20px; padding-left: 18px; color: var(--text-muted); font-size: 14px;">
+            <li style="margin-bottom:6px;">Built a FastAPI backend with dialect-aware prompt construction, so SQL and NoSQL requests get fundamentally different generation rules rather than one generic prompt.</li>
+            <li style="margin-bottom:6px;">Designed a self-contained dashboard &mdash; input and output panels joined by a visual "translation seam," chip-based dialect selection, and session history &mdash; with a distinct plum-and-citrine visual identity.</li>
+            <li>Integrated Google's Gemini API for generation, with structured JSON output parsing and dialect-specific safety warnings (e.g. flagging a destructive query missing a WHERE clause).</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span class="pill">FastAPI</span><span class="pill">Gemini API</span><span class="pill">JavaScript</span><span class="pill">MongoDB</span><span class="pill">PostgreSQL</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/BEREABHINAY/textquery" target="_blank" rel="noopener" class="btn btn-ghost">TextQuery Repo</a>
           </div>
         </div>
 
