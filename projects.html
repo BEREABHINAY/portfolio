@@ -36,7 +36,7 @@
       <div class="eyebrow">Projects</div>
       <div class="section-head reveal">
         <h2>Things I've actually built</h2>
-        <p>Four projects, four different problems &mdash; an AI system that answers questions from your own documents, a real-world process modelled as software, a complete full-stack application shipped end to end, and an LLM-powered tool that turns plain English into database queries.</p>
+        <p>Five projects, five different problems &mdash; an AI system that answers questions from your own documents, a real-world process modelled as software, a complete full-stack application shipped end to end, an LLM-powered tool that turns plain English into database queries, and a full analytics platform built on a 100,000-record synthetic hospital-network dataset.</p>
       </div>
 
       <div class="grid-2">
@@ -55,7 +55,7 @@
           <div class="btn-row">
             <a href="https://github.com/BEREABHINAY/DocMind" target="_blank" rel="noopener" class="btn btn-ghost">DocMind Repo</a>
             <!-- Replace href="#" with the real live URL when ready, then remove opacity/pointer-events -->
-            <a href="https://doc-mind-sigma.vercel.app/" target="_blank" class="btn btn-ghost" title="https://doc-mind-sigma.vercel.app/">DocuMind Live</a>
+            <a href="https://doc-mind-sigma.vercel.app/" class="btn btn-ghost" title="https://doc-mind-sigma.vercel.app/">DocuMind Live</a>
           </div>
         </div>
 
@@ -74,7 +74,25 @@
           <div class="btn-row">
             <a href="https://github.com/BEREABHINAY/textquery" target="_blank" rel="noopener" class="btn btn-ghost">TextQuery Repo</a>
             <!-- Replace href="#" with the real live URL when ready, then remove opacity/pointer-events -->
-            <a href="https://text-query.vercel.app/" target="_blank" class="btn btn-ghost" title="https://text-query.vercel.app/">TextQuery Live</a>
+            <a href="https://text-query.vercel.app/" class="btn btn-ghost" title="https://text-query.vercel.app/">TextQuery Live</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <span class="pill" style="margin-bottom:18px; display:inline-block;">Data Analytics · Python / ML</span>
+          <h3 style="font-size:21px; margin-bottom:6px;">Pan-India Healthcare Patient Analytics &amp; Mortality Intelligence Dashboard</h3>
+          <p style="font-size:14.5px;">An end-to-end analytics platform built on a 100,000-patient synthetic dataset spanning 74 hospitals across 14 Indian states &mdash; covering mortality trends, disease burden (including road-accident/trauma admissions), hospital and financial performance, and a predictive mortality-risk model, all in an 11-page interactive dashboard with a live, client-side data filter.</p>
+          <ul style="margin: 16px 0 20px; padding-left: 18px; color: var(--text-muted); font-size: 14px;">
+            <li style="margin-bottom:6px;">Engineered a 100K-row synthetic patient dataset with real clinical correlations &mdash; age-linked disease prevalence, severity-driven cost/ICU use, and a logistic mortality-risk formula &mdash; rather than random data, so downstream statistics and ML have genuine signal to find.</li>
+            <li style="margin-bottom:6px;">Trained and compared 3 classification models (Logistic Regression, Decision Tree, Random Forest) for admission-time death-risk prediction, using class-balanced weighting to handle the ~17% base mortality rate, evaluated via ROC-AUC, precision/recall/F1, and confusion matrices.</li>
+            <li>Shipped an 11-page, single-file dashboard (zero backend) with a Filter Explorer supporting true client-side filtering by year range and disease category across all 100,000 records, verified with a custom jsdom-based test harness covering every page and filter interaction.</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span class="pill">Python</span><span class="pill">pandas / numpy</span><span class="pill">scikit-learn</span><span class="pill">scipy</span><span class="pill">Plotly.js</span><span class="pill">HTML/CSS/JS</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/BEREABHINAY/Pan-India-Healthcare-Patient-Analytics-Dashboard.git" target="_blank" rel="noopener" class="btn btn-ghost">Healthcare Dashboard Repo</a>
+            <a href="https://pan-india-healthcare-patient-analyt.vercel.app/" target="_blank" rel="noopener" class="btn btn-ghost" title="https://pan-india-healthcare-patient-analyt.vercel.app/">Healthcare Dashboard Live</a>
           </div>
         </div>
 
@@ -93,7 +111,7 @@
           <div class="btn-row">
             <a href="https://github.com/AbhinayBere" target="_blank" rel="noopener" class="btn btn-ghost">Code · Repo Coming Soon</a>
             <!-- Replace href="#" with the real live URL when ready, then remove opacity/pointer-events -->
-            <a href="#" class="btn btn-ghost" target="_blank" aria-disabled="true" title="Add live URL here" style="opacity:0.5; pointer-events:none;">Live Demo</a>
+            <a href="#" class="btn btn-ghost" aria-disabled="true" title="Add live URL here" style="opacity:0.5; pointer-events:none;">Live Demo</a>
           </div>
         </div>
 
@@ -113,7 +131,7 @@ authentication and OTP-verified two-factor login across 3 user flows (signup, lo
           <div class="btn-row">
             <a href="https://github.com/BEREABHINAY/placement-platform.git" target="_blank" rel="noopener" class="btn btn-ghost">placement-prep Repo</a>
             <!-- Replace href="#" with the real live URL when ready, then remove opacity/pointer-events -->
-            <a href="https://placementprep-wheat.vercel.app/" target="_blank" class="btn btn-ghost" title="https://placementprep-wheat.vercel.app/">Placement-Prep Live</a>
+            <a href="https://placementprep-wheat.vercel.app/" class="btn btn-ghost" title="https://placementprep-wheat.vercel.app/">Placement-Prep Live</a>
           </div>
         </div>
       </div>
